@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Builder with Job Predictor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>Resume Builder + Job Predictor</h1>
+
+  <div class="main">
+
+    <!-- FORM -->
+    <div class="form-card">
+      <h2>Enter Details</h2>
+
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="phone" placeholder="Phone">
+
+      <input type="text" id="github" placeholder="GitHub Profile Link">
+      <input type="text" id="linkedin" placeholder="LinkedIn Profile Link">
+
+      <textarea id="education" placeholder="Education"></textarea>
+      <textarea id="experience" placeholder="Experience"></textarea>
+      <!-- Skills -->
+      <div id="skills-section">
+        <h3>Skills</h3>
+        <input type="text" class="skill" placeholder="Enter skill">
+      </div>
+      <button onclick="addSkill()">+ Add Skill</button>
+
+      <!-- Projects -->
+      <div id="projects-section">
+        <h3>Projects</h3>
+        <input type="text" class="project" placeholder="Enter project">
+      </div>
+      <button onclick="addProject()">+ Add Project</button>
+
+      <div class="buttons">
+        <button onclick="generateResume()">Generate</button>
+        <button onclick="downloadPDF()">Download PDF</button>
+        <button onclick="resetForm()">Reset</button>
+        <button onclick="toggleTheme()">Toggle Theme</button>
+      </div>
+
+      <h3 id="jobPrediction"></h3>
+    </div>
+
+    <!-- PREVIEW -->
+    <div class="preview-card" id="resumePreview" contenteditable="true">
+      <h2>Your Resume Preview</h2>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
