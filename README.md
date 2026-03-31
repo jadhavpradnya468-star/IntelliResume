@@ -52,7 +52,7 @@ The app analyzes user skills and suggests roles like:
 - Cloud Storage  
 
 ##Live Project Demo:
-link:
+link:https://jadhavpradnya468-star.github.io/IntelliResume/
 ## 👩‍💻 Author
 Pradnya Jadhav    
 GitHub: https://github.com/jadhavPradnya468-star  
